@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <script>
-        window.location.href = "https://hcnjp46vfwsz.feishu.cn/wiki/VaiwwEp0ji2jrkk5PEjcPCyhneg?table=tbl1Y5TaMa5d5xi7&view=vewAzV3Mf9";
-    </script>
+<meta charset="utf-8">
+<title>跳转中…</title>
+<script>
+// 主链（GitHub）
+var mainUrl = "https://bianyujin.github.io/main/jump.html";
+// 国内镜像链（jsDelivr 加速）
+var mirrorUrl = "https://cdn.jsdelivr.net/gh/bianyujin/main@jump.html";
+// 先试国内镜像，失败了再走 GitHub
+fetch(mirrorUrl, {method: 'HEAD', mode: 'no-cors'})
+  .then(() => location.replace(mirrorUrl))
+  .catch(() => location.replace(mainUrl));
+</script>
 </head>
-<body>正在跳转...</body>
+<body>
+<p style="text-align:center;margin-top:50px;font-size:18px;">
+  资源加载中，请稍等 1 秒…
+</p>
+</body>
 </html>
